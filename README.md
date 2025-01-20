@@ -21,3 +21,17 @@ You can install the required dependencies by running:
 
 ```bash
 pip install -r requirements.txt
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   cd url_shortener
+
+2. Run the application:
+  ```bash
+  python app.py
+
+3. Open your browser and visit:
+  ```arduino
+   http://127.0.0.1:5000
