@@ -19,7 +19,7 @@ This is a simple URL shortener built with Flask, SQLAlchemy, and MySQL. It allow
 You can install the required dependencies by running:
 
 ```bash
-pip install -r requirements.txt ```
+pip install -r requirements.txt
 
 ### Installation
 
