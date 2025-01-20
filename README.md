@@ -22,7 +22,7 @@ You can install the required dependencies by running:
 ```bash
 pip install -r requirements.txt
 
-## Installation
+### Installation
 1. Clone the repository:
    ```bash
    git clone <repository_url>
