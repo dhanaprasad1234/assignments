@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - {{ analytics.short_url }}</title>
+</head>
+<body>
+    <h1>Analytics for: <a href="{{ analytics.short_url }}" target="_blank">{{ analytics.short_url }}</a></h1>
+
+    <h2>Original URL:</h2>
+    <p>{{ analytics.original_url }}</p>
+
+    <h2>Visit Count:</h2>
+    <p>{{ analytics.visit_count }}</p>
+
+    <h3>Access Logs:</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>IP Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for log in analytics.access_logs %}
+            <tr>
+                <td>{{ log.timestamp }}</td>
+                <td>{{ log.ip_address }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <br><a href="/">Back to home</a>
+</body>
+</html>
